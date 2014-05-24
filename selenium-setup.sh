@@ -8,8 +8,9 @@ if [ `id -u` -ne '0' ]; then
 fi
 
 SELENIUM_DIR="/usr/share/selenium"
-STANDALONE_VERSION="2.34.0"
-STANDALONE_URL="http://selenium.googlecode.com/files/selenium-server-standalone-${STANDALONE_VERSION}.jar"
+STANDALONE_VERSION="2.42.0"
+STANDALONE_VERSION_PATH="2.42"
+STANDALONE_URL="http://selenium-release.storage.googleapis.com/${STANDALONE_VERSION_PATH}/selenium-server-standalone-${STANDALONE_VERSION}.jar"
 ARCH=$(uname -i)
 if [ "$ARCH" == "x86_64" ]; then ARCH="64"; else ARCH="32"; fi
 CHROME_DRIVER_VERSION="2.9"
